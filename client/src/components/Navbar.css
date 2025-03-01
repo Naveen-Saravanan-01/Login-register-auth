@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+    width: 100vw;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button{
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+@media (max-width:500px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 40px;
+        align-items: center;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+}

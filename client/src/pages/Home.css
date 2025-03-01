@@ -1,0 +1,13 @@
+.home h1{
+    text-align: center;
+    margin: 10px;
+}
+
+@media (max-width:500px) {
+
+    .home h1{
+        font-size: 1.7rem;
+    }
+    
+    
+}
