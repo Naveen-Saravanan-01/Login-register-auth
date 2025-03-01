@@ -4,7 +4,7 @@ import dotenv from "dotenv"
 import jwt from "jsonwebtoken";
 import authMiddleware from '../middleware/authMiddleware.js'
 
-const bcrypt = await import("bcrypt");
+const bcrypt = await import("bcryptjs");
 
 dotenv.config();
 
