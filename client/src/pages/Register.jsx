@@ -25,7 +25,7 @@ const Register = () => {
 
     try{
 
-    const {data} = await axios.post('http://localhost:4000/api/users/register',form)
+    const {data} = await axios.post('https://login-register-auth-b92h.onrender.com/api/users/register',form)
 
     alert('Registered Successfully')
 

@@ -46,7 +46,7 @@ const Profile = () => {
       }
 
       try {
-        const { data } = await axios.get("http://localhost:4000/api/users/profile", {
+        const { data } = await axios.get("https://login-register-auth-b92h.onrender.com/api/users/profile", {
           headers: { Authorization: `Bearer ${token}` },
         });
 

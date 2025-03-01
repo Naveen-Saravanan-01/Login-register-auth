@@ -12,7 +12,7 @@ const Admin = () => {
     const token = localStorage.getItem("token");
     try {
       const token = localStorage.getItem("token"); 
-      const { data } = await axios.get("http://localhost:4000/api/users/admin/users", {
+      const { data } = await axios.get("https://login-register-auth-b92h.onrender.com/api/users/admin/users", {
         headers: { Authorization: `Bearer ${token}` },
       });
       console.log("Fetched Users:", data); 
@@ -30,7 +30,7 @@ const handleSave = async (id) => {
     try {
       console.log("Updating user with ID:", id, "with data:", editForm);
   
-      await axios.put(`http://localhost:4000/api/users/update-user/${id}`, {
+      await axios.put(`https://login-register-auth-b92h.onrender.com/api/users/update-user/${id}`, {
         name: editForm.name,
         email: editForm.email,
         password: editForm.password || undefined,
